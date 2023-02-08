@@ -1,0 +1,47 @@
+
+<form class="border border-dark">
+
+    <div class="row g-0">
+        <div class="col text-center p-2 mb-3 bg-light">
+            <span class="fs-3">Login</span>
+        </div>
+    </div>
+ 
+        <!-- <div class="profileImg">
+          <img src="../assets/courses/icon.png" alt="Avatar" class="avatar" width="100px">
+        </div> -->
+        
+        <div class="row">
+
+            <div class="col">
+                <input type="email" 
+          placeholder="Enter Email"
+          class="form-control" 
+          name="email" 
+          [(ngModel)]="email" /> 
+        </div>
+    
+    
+         <!-- <label for="inputPassword">Password</label> -->
+         <div class="col">
+            <input
+        type="password"
+        placeholder="Enter Password"
+        class="form-control"
+        name="password"
+        [(ngModel)]="password"/>
+       </div>
+
+    </div>
+      
+      <div class="row">
+        <div class="col-6 offset-3">
+            <div class="d-grid">
+        <button type="submit" class="btn btn-primary" (click)="logInUser()">Log in</button>
+    </div>
+</div>
+</div>
+
+</form>
+
+
